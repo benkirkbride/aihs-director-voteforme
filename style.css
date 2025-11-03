@@ -118,7 +118,14 @@ ul li strong {
   background-color: #623c5c;
   transform: scale(1.03);
 }
+.button.vote {
+  background-color: #7a4e74;
+}
 
+.button.vote:hover {
+  background-color: #623c5c;
+  transform: scale(1.03);
+}
 /* ----------- Voting Info ----------- */
 .voting {
   margin: 1.2rem 0;
@@ -166,4 +173,5 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
