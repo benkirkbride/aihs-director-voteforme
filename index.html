@@ -5,15 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ben Kirkbride – AIHS Director</title>
 
-  <!-- FAVICON: if you uploaded to GitHub use 'favicon.png' or update path below -->
-  <link rel="icon" type="image/png" href="/mnt/data/A_favicon_image_features_the_initials_\"BK\"_in_bold.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="bkfavicon.png" />
 
   <!-- Open Graph (LinkedIn / social preview) -->
-  <!-- Note: If you publish to GitHub, change these to your public URL, e.g.
-       https://yourusername.github.io/elected-aihs-director/your-image.jpg -->
   <meta property="og:title" content="Ben Kirkbride – AIHS Director" />
   <meta property="og:description" content="Thank you to AIHS members for your support. I’m honoured to have been elected as a Director and look forward to serving our profession with integrity and purpose." />
-  <meta property="og:image" content="/mnt/data/A_digital_graphic_announcement_features_a_headshot.png" />
+  <meta property="og:image" content="ben-kirkbride-headshot.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="627" />
   <meta property="og:url" content="https://benkirkbride.github.io/elected-aihs-director/" />
@@ -21,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    :root{
+    :root {
       --accent:#e68a47;
       --purple:#7a4e74;
       --char:#222;
@@ -29,179 +27,171 @@
       --bg:#fff;
     }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
+    body {
+      margin: 0;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background:var(--bg);
-      color:var(--char);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      text-align:center;
+      background: var(--bg);
+      color: var(--char);
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .container{
-      max-width:920px;
-      margin:0 auto;
-      padding:28px 20px 48px;
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
     }
 
-    header{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:14px;
-      padding-top:8px;
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
     }
 
-    /* Headshot uses provided file path. If using GitHub, rename file to ben-kirkbride-headshot.jpg and update src */
-    .photo{
-      width:100%;
-      max-width:360px;
-      height:auto;
-      border-radius:12px;
-      box-shadow:0 6px 20px rgba(0,0,0,0.12);
-      object-fit:cover;
+    .photo {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      object-fit: cover;
     }
 
-    h1{
-      margin:8px 0 0;
-      font-size:2rem;
-      line-height:1.05;
-      font-weight:700;
-      color:var(--char);
+    h1 {
+      margin: 8px 0 0;
+      font-size: 2rem;
+      line-height: 1.05;
+      font-weight: 700;
     }
 
-    h2{
-      margin:6px 0 0;
-      color:var(--muted);
-      font-weight:500;
-      font-size:1.05rem;
-    }
-
-    .hero-banner{
-      margin:22px 0;
-      display:flex;
-      gap:18px;
-      align-items:stretch;
-      justify-content:center;
-      flex-wrap:wrap;
+    h2 {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 1.05rem;
     }
 
     .message {
-      max-width:760px;
-      margin:12px auto 0;
-      text-align:left;
-      padding:18px;
-      border-radius:8px;
-      background:linear-gradient(180deg,#fff,#fff);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.03);
-      font-size:1.02rem;
-      line-height:1.6;
+      max-width: 760px;
+      margin: 20px auto 0;
+      text-align: left;
+      padding: 20px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      font-size: 1.02rem;
+      line-height: 1.6;
     }
 
     .highlight {
-      border-left:5px solid var(--purple);
-      background:#fbf9ff;
-      padding:14px 16px;
-      border-radius:4px;
-      margin-bottom:14px;
+      border-left: 5px solid var(--purple);
+      background: #fbf9ff;
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin-bottom: 14px;
     }
 
     .links {
-      margin-top:14px;
-      display:flex;
-      gap:12px;
-      justify-content:center;
-      flex-wrap:wrap;
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      display:inline-block;
-      padding:12px 18px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:700;
-      color:var(--bg);
-      background:var(--purple);
-      border:2px solid var(--purple);
-      transition:all .18s ease;
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--bg);
+      background: var(--purple);
+      border: 2px solid var(--purple);
+      transition: all .18s ease;
     }
 
     .btn.alt {
-      background:transparent;
-      color:var(--purple);
+      background: transparent;
+      color: var(--purple);
     }
 
-    .btn:hover{ transform:translateY(-2px); filter:brightness(.98); }
-
-    footer{
-      margin-top:34px;
-      color:#666;
-      font-size:.92rem;
-      border-top:1px solid #f0f0f0;
-      padding-top:18px;
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(.97);
     }
 
-    @media (max-width:720px){
-      .message{ text-align:left; padding:14px; }
-      .links{ flex-direction:column; gap:10px; align-items:center; }
-      header{padding-top:6px}
+    footer {
+      margin-top: 34px;
+      color: #666;
+      font-size: .92rem;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 720px) {
+      .message {
+        padding: 16px;
+      }
+      .links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <!-- Use the exact local path below (provided in workspace). 
-           If you move these files into your GitHub repo, rename the image to ben-kirkbride-headshot.jpg and update this src to 'ben-kirkbride-headshot.jpg' -->
-      <img alt="Ben Kirkbride headshot" class="photo" src="/mnt/data/Ben Kirkbride - Head shot 2025.JPG" />
+<div class="container">
 
-      <h1>Ben Kirkbride</h1>
-      <h2>Director – Australian Institute of Health &amp; Safety</h2>
-    </header>
+  <header>
+    <img src="ben-kirkbride-headshot.jpg" alt="Ben Kirkbride headshot" class="photo" />
 
-    <div class="message">
-      <div class="highlight">
-        <p style="margin:0;">
-          I am honoured to have been elected as a <strong>Director of the Australian Institute of Health &amp; Safety</strong>.
-          Thank you to all members who took the time to vote and placed their trust in me.
-        </p>
-      </div>
+    <h1>Ben Kirkbride</h1>
+    <h2>Director – Australian Institute of Health & Safety</h2>
+  </header>
 
-      <p>
-        I look forward to contributing to the governance and strategic direction of the Institute, and to working with the Board,
-        members, volunteers and our wider health and safety community. My commitment is to strengthen member value, elevate professional standards,
-        and support the ongoing development and connection of our profession.
+  <div class="message">
+    <div class="highlight">
+      <p style="margin:0;">
+        I am honoured to have been elected as a <strong>Director of the Australian Institute of Health &amp; Safety</strong>.
+        Thank you to all members who took the time to vote and placed their trust in me.
       </p>
-
-      <p>
-        If you’d like to read my nomination statement or connect, please use the links below.
-      </p>
-
-      <div class="links" role="navigation" aria-label="Important links">
-        <!-- PDF link: using the uploaded file path in your workspace.
-             If you uploaded a different filename to the repo, update this href to match. -->
-        <a class="btn" href="/mnt/data/AIHS_Board Nomination Statement - Ben Kirkbride (20250822).pdf" target="_blank" rel="noopener noreferrer">
-          📄 View Nomination Statement
-        </a>
-
-        <a class="btn alt" href="https://www.linkedin.com/in/ben-kirkbride-78a63223/" target="_blank" rel="noopener noreferrer">
-          🔗 Connect on LinkedIn
-        </a>
-      </div>
     </div>
 
-    <footer>
-      <p style="margin:0 0 6px 0">Authorised by Ben Kirkbride for personal announcement.</p>
-      <small>© 2025 Ben Kirkbride</small>
-    </footer>
+    <p>
+      I look forward to contributing to the governance and strategic direction of the Institute, and to working with the Board,
+      members, volunteers and our wider health and safety community.
+    </p>
 
+    <p>
+      You can read my nomination statement or connect via LinkedIn below.
+    </p>
+
+    <div class="links">
+      <a class="btn" href="AIHS_Board Nomination Statement - Ben Kirkbride 2025.pdf" target="_blank">
+        📄 View Nomination Statement
+      </a>
+
+      <a class="btn alt" href="https://www.linkedin.com/in/ben-kirkbride-78a63223/" target="_blank">
+        🔗 Connect on LinkedIn
+      </a>
+    </div>
   </div>
+
+  <footer>
+    <p style="margin:0 0 6px">Authorised by Ben Kirkbride for personal announcement.</p>
+    <small>© 2025 Ben Kirkbride</small>
+  </footer>
+
+</div>
+
 </body>
 </html>
+
 
 
 
